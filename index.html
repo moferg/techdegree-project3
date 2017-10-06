@@ -3,6 +3,8 @@
   <head>
     <title>Online Registration Form</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   
   <body>
@@ -19,11 +21,11 @@
         <legend>Contact Information</legend>
           <div>
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="user-name" value="Required">
+            <input type="text" id="name" name="user-name" placeholder="Required">
           </div>
           <div>
             <label for="mail">Email Address</label>
-            <input type="email" id="mail" name="user-mail" value="Required">
+            <input type="email" id="mail" name="user-mail" placeholder="Required">
           </div>
           <div>
             <label for="phone">Phone Number</label>
@@ -104,9 +106,9 @@
         <legend>Newsletter</legend>
           <div>
             <label>Select the newsletters you would like to recieve</label><br>
-            <input type="checkbox" id="html" name="newsletter"><label for="html">HTML News</label><br>
-            <input type="checkbox" id="css" name="newsletter"><label for="css">CSS News</label><br>
-            <input type="checkbox" id="js" name="newsletter"><label for="js">Javascript News</label>
+            <input type="checkbox" id="html" name="html-newsletter"><label for="html">HTML News</label><br>
+            <input type="checkbox" id="css" name="css-newsletter"><label for="css">CSS News</label><br>
+            <input type="checkbox" id="js" name="js-newsletter"><label for="js">Javascript News</label>
           </div>
           <div>
             <label>Newsletter format</label><br>
