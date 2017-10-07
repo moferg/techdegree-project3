@@ -1,0 +1,114 @@
+/* Base Layout */
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  background-color: #444;
+}
+
+h1 {
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.25em;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 0;  
+  text-align: center;
+  font-size: 1em;
+}
+
+.caption p {
+  margin-top: 5px;
+  text-align: center;
+  color: gray;
+  font-size: .75em;
+}
+
+.caption {
+  border-bottom: solid black 3px;
+}
+
+.contact-info,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-top: solid black 1.5px;
+}
+
+.contact-info input,
+.contact-info select,
+textarea {
+  background-color: #eee;
+  border-radius: 5%;
+  width: 100%;
+  border: none;
+}
+
+label {
+  font-size: .75em;
+}
+
+input, select, textarea {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: solid black 1px;
+}
+
+#zipcode {
+  width: 50%;
+}
+
+.zipcode {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter input+label {
+  margin: 12.5px;
+}
+
+.newsletter div {
+  margin-top: 15px;
+}
+
+.newsletter div input,
+.newsletter div textarea {
+  margin-top: 10px;
+}
+
+button {
+  background-color: lightseagreen;
+  color:  whitesmoke;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 5%;
+}
+
+footer p {
+  color: gray;
+  text-align: center;
+  font-style: italic;
+  margin-top: 0;
+}

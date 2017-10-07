@@ -3,6 +3,7 @@
   <head>
     <title>Online Registration Form</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -11,14 +12,15 @@
     <header>
       <h1>The Code Review</h1>
     </header>
-    <div>
+    <div class="wrapper">
+    <div class="caption">
       <h2>Signup for our newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
     </div>
     <div>
       <form>
-        <fieldset>
-        <legend>Contact Information</legend>
+        <fieldset class="contact-info">
+        <legend><b>Contact Information</b></legend>
           <div>
             <label for="name">Full Name</label>
             <input type="text" id="name" name="user-name" placeholder="Required">
@@ -96,19 +98,19 @@
               <option value="WY">Wyoming</option>
             </select>
           </div>
-          <div>
+          <div class="zipcode">
             <label for="zipcode">Zip Code</label>
-            <input type="number" id="zipcode" name="user-zip-code">
+            <input type="text" id="zipcode" name="user-zip-code">
           </div>
         </fieldset>
         
-        <fieldset>
-        <legend>Newsletter</legend>
+        <fieldset class="newsletter">
+        <legend><b>Newsletter</b></legend>
           <div>
             <label>Select the newsletters you would like to recieve</label><br>
-            <input type="checkbox" id="html" name="html-newsletter"><label for="html">HTML News</label><br>
-            <input type="checkbox" id="css" name="css-newsletter"><label for="css">CSS News</label><br>
-            <input type="checkbox" id="js" name="js-newsletter"><label for="js">Javascript News</label>
+            <input type="checkbox" id="html-news" name="html-newsletter"><label for="html-news">HTML News</label><br>
+            <input type="checkbox" id="css-news" name="css-newsletter"><label for="css-news">CSS News</label><br>
+            <input type="checkbox" id="js-news" name="js-newsletter"><label for="js-news">Javascript News</label>
           </div>
           <div>
             <label>Newsletter format</label><br>
@@ -128,6 +130,7 @@
         <p>Copyright The Code Review</p>
       </footer>
     
+    </div>
     </div>
     
   </body>
