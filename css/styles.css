@@ -74,7 +74,7 @@ textarea:focus {
 }
 
 #zipcode {
-  width: 50%;
+  width: 125px;
 }
 
 .zipcode {
@@ -111,4 +111,43 @@ footer p {
   text-align: center;
   font-style: italic;
   margin-top: 0;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+  
+  .wrapper {
+    width: 60%;
+  }
+  
+  .caption {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .contact-info div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .contact-info label:not(.zip-label) {
+    width: 125px;
+    margin: auto;
+  }
+  
+  .zip-label {
+    margin: auto;
+    margin-left: 0;
+  }
+  
+  #zipcode {
+    
+  }
+  
+  footer p {
+    font-size: .75em;
+  }
+  
 }
