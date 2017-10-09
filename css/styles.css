@@ -39,21 +39,44 @@ h2 {
   border-bottom: solid black 3px;
 }
 
+footer p {
+  color: gray;
+  text-align: center;
+  font-style: italic;
+  margin-top: 0;
+}
+
+/* Form Layout */
+
 .contact-info,
 .newsletter {
   display: flex;
   flex-direction: column;
   border: none;
   border-top: solid black 1.5px;
+  background-color: #eee;
 }
 
 .contact-info input,
 .contact-info select,
 textarea {
-  background-color: #eee;
+  background-color: #aaa;
   border-radius: 5%;
   width: 100%;
   border: none;
+  padding-right: 25px;
+}
+
+input[placeholder] {
+  font-style: italic;
+  text-align: right;
+  padding-right: 25px;
+  width: 100%;
+}
+
+input:not(:placeholder-shown) {
+  text-align: left;
+  font-style: normal;
 }
 
 label {
@@ -65,12 +88,14 @@ input, select, textarea {
   padding-bottom: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+  transition: background 1s;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   border: solid black 1px;
+  background: yellow;
 }
 
 #zipcode {
@@ -106,13 +131,6 @@ button {
   border-radius: 5%;
 }
 
-footer p {
-  color: gray;
-  text-align: center;
-  font-style: italic;
-  margin-top: 0;
-}
-
 /* Media Query */
 
 @media screen and (min-width: 768px) {
@@ -124,6 +142,12 @@ footer p {
   .caption {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  
+  .contact-info input,
+  .contact-info select,
+  textarea {
+    width: 75%;
   }
   
   .contact-info div {
@@ -140,12 +164,18 @@ footer p {
   .zip-label {
     margin: auto;
     margin-left: 0;
+    margin-right: 60px;
   }
   
   #zipcode {
-    
+    margin-left: 0;
   }
   
+  textarea {
+    width: 400px;
+    margin: auto;
+  }
+ 
   footer p {
     font-size: .75em;
   }
