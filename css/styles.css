@@ -43,15 +43,17 @@ footer p {
   color: gray;
   text-align: center;
   font-style: italic;
-  margin-top: 0;
 }
 
 /* Form Layout */
 
-.contact-info,
-.newsletter {
+.contact-info div {
   display: flex;
   flex-direction: column;
+}
+
+.contact-info,
+.newsletter {
   border: none;
   border-top: solid black 1.5px;
   background-color: #eee;
@@ -62,7 +64,7 @@ footer p {
 textarea {
   background-color: #aaa;
   border-radius: 5%;
-  width: 100%;
+  width: 90%;
   border: none;
   padding-right: 25px;
 }
@@ -71,7 +73,6 @@ input[placeholder] {
   font-style: italic;
   text-align: right;
   padding-right: 25px;
-  width: 100%;
 }
 
 input:not(:placeholder-shown) {
@@ -99,7 +100,7 @@ textarea:focus {
 }
 
 #zipcode {
-  width: 125px;
+  width: 25%;
 }
 
 .zipcode {
@@ -157,14 +158,14 @@ button {
   }
   
   .contact-info label:not(.zip-label) {
-    width: 125px;
+    width: 25%;
     margin: auto;
   }
   
   .zip-label {
     margin: auto;
     margin-left: 0;
-    margin-right: 60px;
+    margin-right: 50px;
   }
   
   #zipcode {
